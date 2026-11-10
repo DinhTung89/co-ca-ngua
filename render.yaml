@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: co-ca-ngua
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
